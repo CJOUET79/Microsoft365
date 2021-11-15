@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+}
+
+.pres, .logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 75px;
+}
+.m365{
+    display: flex;
+}
+
+iframe{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    grid-template-areas: 
+    "headbar1 headbar2 headbar3"
+    "nav content content"
+    "footer1 footer1 footer2";
+}
+
+.headbar1{
+    display: flex;
+    justify-content: start;
+    grid-area: headbar1;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.headbar2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: headbar2;
+    margin-top: 5px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 900;
+    color: navy;
+}
+
+.headbar3{
+    display: flex;
+    justify-content: end;
+    grid-area: headbar3;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.navbar{
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 10px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.content{
+    display: flex;
+    grid-area: content;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: navy;
+    text-align: center;
+}
+
+.footer1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    grid-area: footer1;
+    margin-left: 10px;
+    font-family: 'Comic Neue', cursive;
+    color: navy;
+}
+.footer2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    grid-area: footer2;
+    margin-right: 10px;
+    font-family: 'Comic Neue', cursive;
+    color: navy;
+}
+a{
+    text-decoration: none;
+    font-family: 'Comic Neue', cursive;
+    color: navy;
+}
